@@ -1,111 +1,111 @@
 /*
-    Template made for North Korean programming!
-    ¹®È­¾î·Î ÄŞÇªÅ¸ »ç¿ëÇÏ°í ½Í¾ú´ø ¸°¹ÎµéÀ» À§ÇØ!
-    ¹öÁ¯: Beta ¤Ó ¿¬°á°í¸®: github.com/sdnight5/munhwa
+    Munhwa C++ for Linmin!
+    ë¬¸í™”ì–´ë¡œ ì½¤í‘¸íƒ€ ì‚¬ìš©í•˜ê³  ì‹¶ì—ˆë˜ ë¦°ë¯¼ë“¤ì„ ìœ„í•´!
+    ë²„ì ¼: Beta ã…£ ì—°ê²°ê³ ë¦¬: github.com/sdnight5/munhwa
 */
 
-// ¸Ó¸®¸» ¹× º°¸í¹Ì¸®ºÙÀÌ±â
+// ë¨¸ë¦¬ë§ ë° ë³„ëª…ë¯¸ë¦¬ë¶™ì´ê¸°
 #include <bits/stdc++.h>
 using namespace std;
 
-// ¸°¹ÎÈ®ÀÎÇÏ±â
-#define ¸°¹Îµé¿©º¸³»±â(x) cin >> x
-#define ¾Æ¿ÀÁöÅº±¤º¸³»±â(x) cout << x
+// ë¦°ë¯¼í™•ì¸í•˜ê¸°
+#define ë¦°ë¯¼ë“¤ì—¬ë³´ë‚´ê¸°(x) cin >> x
+#define ì•„ì˜¤ì§€íƒ„ê´‘ë³´ë‚´ê¸°(x) cout << x
 
-// ÀÏ²Û °ü·Ã ÇÔ¼ö
-#define ÀÏ²ÛÃß°¡ÇÏ±â ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-#define ÀÏ²Û¼ö¼ÛÁØºñÇÏ±â cout << fixed; cout.precision(20)
+// ì¼ê¾¼ ê´€ë ¨ í•¨ìˆ˜
+#define ì¼ê¾¼ì¶”ê°€í•˜ê¸° ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define ì¼ê¾¼ìˆ˜ì†¡ì¤€ë¹„í•˜ê¸° cout << fixed; cout.precision(20)
 
-// ±âº» ±¸¹®
-#define ¸¸¾à if
-#define ¾Æ´Ï¶ó¸é else
-#define ¹İº¹ for
-#define Á¶°ÇÀ»¸¸Á·ÇÏ´Âµ¿¾È while
-#define Çü¹ú break
-#define ÇÏÀ§Çü¹ú continue
-#define ±×¸®°í &&
-#define ¶Ç´Â ||
+// ê¸°ë³¸ êµ¬ë¬¸
+#define ë§Œì•½ if
+#define ì•„ë‹ˆë¼ë©´ else
+#define ë°˜ë³µ for
+#define ì¡°ê±´ì„ë§Œì¡±í•˜ëŠ”ë™ì•ˆ while
+#define í˜•ë²Œ break
+#define í•˜ìœ„í˜•ë²Œ continue
+#define ê·¸ë¦¬ê³  &&
+#define ë˜ëŠ” ||
 
-// Àü±¸ ¿¬»ê
-#define Àú·± !
-#define ¿ª¸ğÀÓ ^
-#define ±³¸ğÀÓ &
-#define ÇÕ¸ğÀÓ |
-#define ¿ŞÂÊ¹Ğ±â <<
-#define ¿À¸¥ÂÊ¹Ğ±â >>
+// ì „êµ¬ ì—°ì‚°
+#define ì €ëŸ° !
+#define ì—­ëª¨ì„ ^
+#define êµëª¨ì„ &
+#define í•©ëª¨ì„ |
+#define ì™¼ìª½ë°€ê¸° <<
+#define ì˜¤ë¥¸ìª½ë°€ê¸° >>
 
-// ÀÚ·áÇü
-#define Á¤¼ö int
-#define ¿µÀÏ bool
-#define ¹®ÀÚ char
-#define ¼Ò¼ö double
-#define ±ä½Ç¼ö long double
-#define ¹®ÀÚ¿­ string
-#define ±äÁ¤¼ö long long
-#define ÇÙ¹Ì»çÀÏ auto
-#define Ã³Çü¾ÈÇØµµµÇ´Â void
-#define Çà±ºÂ¦ pair
-#define Á¤ÇÑ const
-#define Çà±º¾Õ first
-#define Çà±ºµÚ second
+// ìë£Œí˜•
+#define ì •ìˆ˜ int
+#define ì˜ì¼ bool
+#define ë¬¸ì char
+#define ì†Œìˆ˜ double
+#define ê¸´ì‹¤ìˆ˜ long double
+#define ë¬¸ìì—´ string
+#define ê¸´ì •ìˆ˜ long long
+#define í•µë¯¸ì‚¬ì¼ auto
+#define ì²˜í˜•ì•ˆí•´ë„ë˜ëŠ” void
+#define í–‰êµ°ì§ pair
+#define ì •í•œ const
+#define í–‰êµ°ì• first
+#define í–‰êµ°ë’¤ second
 
-// ±âº» µµ¼­°ü
-#define ¹î»ì°°ÀºÇà±º vector
-#define ¸ğÀÓ set
-#define ¸°¹Î¸ğÀÓ multiset
-#define ¸°¹Î»çÀü unordered_set
-#define »çÀü map
-#define ¿©·¯»çÀü multimap
-#define ¸°¹Î¿©·¯»çÀü unordered_map
-#define ¼ö·É´ÔºÎÅÍ½ÃÀÛÇÏ´Â priority_queue
-#define ¹Ì»çÀÏ½×±â stack
-#define ¹Ì»çÀÏ¹ßÆ÷´ë±â¿­ queue
-#define ¹Ì»çÀÏ¹ßÆ÷¿©·¯¹æ¸é´ë±â¿­ deque
+// ê¸°ë³¸ ë„ì„œê´€
+#define ë±ƒì‚´ê°™ì€í–‰êµ° vector
+#define ëª¨ì„ set
+#define ë¦°ë¯¼ëª¨ì„ multiset
+#define ë¦°ë¯¼ì‚¬ì „ unordered_set
+#define ì‚¬ì „ map
+#define ì—¬ëŸ¬ì‚¬ì „ multimap
+#define ë¦°ë¯¼ì—¬ëŸ¬ì‚¬ì „ unordered_map
+#define ìˆ˜ë ¹ë‹˜ë¶€í„°ì‹œì‘í•˜ëŠ” priority_queue
+#define ë¯¸ì‚¬ì¼ìŒ“ê¸° stack
+#define ë¯¸ì‚¬ì¼ë°œí¬ëŒ€ê¸°ì—´ queue
+#define ë¯¸ì‚¬ì¼ë°œí¬ì—¬ëŸ¬ë°©ë©´ëŒ€ê¸°ì—´ deque
 
-#define ¼ö·É´ÔÀÌµå½Å´Ù push
-#define ¼ö·É´ÔÀÌÅäÇÑ´Ù pop
-#define Çà±º¾ÕÂÊÃß°¡ push_front
-#define Çà±ºµÚÂÊÃß°¡ push_back
-#define Çà±º¾ÕÂÊÁ¦°Å pop_front
-#define Çà±ºµÚÂÊÁ¦°Å pop_back
+#define ìˆ˜ë ¹ë‹˜ì´ë“œì‹ ë‹¤ push
+#define ìˆ˜ë ¹ë‹˜ì´í† í•œë‹¤ pop
+#define í–‰êµ°ì•ìª½ì¶”ê°€ push_front
+#define í–‰êµ°ë’¤ìª½ì¶”ê°€ push_back
+#define í–‰êµ°ì•ìª½ì œê±° pop_front
+#define í–‰êµ°ë’¤ìª½ì œê±° pop_back
 
-#define ¼ö·É´Ô¹è°íÇÁ½Ã´Ù empty
-#define Å©±â size
-#define ¸Ó¸® top
-#define ¹è front
-#define µî back
+#define ìˆ˜ë ¹ë‹˜ë°°ê³ í”„ì‹œë‹¤ empty
+#define í¬ê¸° size
+#define ë¨¸ë¦¬ top
+#define ë°° front
+#define ë“± back
 
-#define ¹Ì»çÀÏÀåÀü insert
-#define ¹Ì»çÀÏ¹ß»ç erase
-#define ¹Ì»çÀÏÈ®ÀÎ find
-#define ¹Ì»çÀÏ°³¼öÈ®ÀÎ count
+#define ë¯¸ì‚¬ì¼ì¥ì „ insert
+#define ë¯¸ì‚¬ì¼ë°œì‚¬ erase
+#define ë¯¸ì‚¬ì¼í™•ì¸ find
+#define ë¯¸ì‚¬ì¼ê°œìˆ˜í™•ì¸ count
 
-#define ¼±ÀüÆ÷°í begin
-#define Ç×º¹ end
-#define Àû±º¼±ÀüÆ÷°í rbegin
-#define Àû±ºÇ×º¹ rend
+#define ì„ ì „í¬ê³  begin
+#define í•­ë³µ end
+#define ì êµ°ì„ ì „í¬ê³  rbegin
+#define ì êµ°í•­ë³µ rend
 
-#define ¼ö·É´Ô¹î»ì max
-#define ¸°¹Î¹î»ì min
-#define Çà±ºÁ¤·Ä sort
-#define ¼ö·É´ÔÁö´É¸¸Å­ lower_bound
-#define ¼ö·É´Ô¹î»ì¸¸Å­ upper_bound
+#define ìˆ˜ë ¹ë‹˜ë±ƒì‚´ max
+#define ë¦°ë¯¼ë±ƒì‚´ min
+#define í–‰êµ°ì •ë ¬ sort
+#define ìˆ˜ë ¹ë‹˜ì§€ëŠ¥ë§Œí¼ lower_bound
+#define ìˆ˜ë ¹ë‹˜ë±ƒì‚´ë§Œí¼ upper_bound
 
-#define ¼ö·É´ÔÀÇ¹î»ì°°Àº greater
+#define ìˆ˜ë ¹ë‹˜ì˜ë±ƒì‚´ê°™ì€ greater
 
-#define ¿©·¯°ö¼À pow
+#define ì—¬ëŸ¬ê³±ì…ˆ pow
  
-// ÀÚ·á°ª
-#define ¼ö·É´ÔÀÇ¸» true
-#define ³²ÇÑÀÇ¸» false
-#define Ãµ¹Î¼ö NULL
-#define ¿©¹é " "
-#define ¹ØÀ¸·Î "\n"
+// ìë£Œê°’
+#define ìˆ˜ë ¹ë‹˜ì˜ë§ true
+#define ë‚¨í•œì˜ë§ false
+#define ì²œë¯¼ìˆ˜ NULL
+#define ì—¬ë°± " "
+#define ë°‘ìœ¼ë¡œ "\n"
  
-// ±âÅ¸
-#define °ø°³Ã³Çü½Ä return 0
-#define ¾Æ¿ÀÁöÅº±¤Çà return
-#define ±âº»ÇÔ¼ö main
+// ê¸°íƒ€
+#define ê³µê°œì²˜í˜•ì‹ return 0
+#define ì•„ì˜¤ì§€íƒ„ê´‘í–‰ return
+#define ê¸°ë³¸í•¨ìˆ˜ main
 
-// ¾Æ¿ÀÁöÅº°üÇà ´Ü¾î
-#define ¼ö·É´ÔÁö´É 0
+// ì•„ì˜¤ì§€íƒ„ê´€í–‰ ë‹¨ì–´
+#define ìˆ˜ë ¹ë‹˜ì§€ëŠ¥ 0
