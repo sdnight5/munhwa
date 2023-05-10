@@ -1,5 +1,5 @@
 /*
-    Munhwa C++ for Linmin!
+    Template made for North Korean programming!
     문화어로 콤푸타 사용하고 싶었던 린민들을 위해!
     버젼: Beta ㅣ 연결고리: github.com/sdnight5/munhwa
 */
@@ -35,14 +35,14 @@ using namespace std;
 #define 오른쪽밀기 >>
 
 // 자료형
-#define 정수 int
-#define 영일 bool
-#define 문자 char
-#define 소수 double
+#define 옹근수 int
+#define 론리적연산자 bool
+#define 글자 char
+#define 씨수 double
 #define 긴실수 long double
 #define 문자열 string
-#define 긴정수 long long
-#define 핵미사일 auto
+#define 긴옹근수 long long
+#define 자동 auto
 #define 처형안해도되는 void
 #define 행군짝 pair
 #define 정한 const
