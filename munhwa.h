@@ -1,7 +1,6 @@
 /*
-    Template made for North Korean programming!
-    문화어로 콤푸타 사용하고 싶었던 린민들을 위해!
-    버젼: Beta ㅣ 연결고리: github.com/sdnight5/munhwa
+    문화어로 콤퓨터 사용하고 싶었던 린민들을 위해!
+    판본: 미완 ㅣ 련결: https://github.com/sdnight5/munhwa
 */
 
 // 머리말 및 별명미리붙이기
@@ -39,7 +38,7 @@ using namespace std;
 #define 론리적연산자 bool
 #define 글자 char
 #define 씨수 double
-#define 긴실수 long double
+#define 긴씨수 long double
 #define 문자열 string
 #define 긴옹근수 long long
 #define 자동 auto
